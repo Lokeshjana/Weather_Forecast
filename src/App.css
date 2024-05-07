@@ -1,6 +1,5 @@
 .App {
   text-align: center;
-  background-color: #87ceeb69;
 }
 
 .forecast-container {
@@ -27,6 +26,10 @@
   padding: 20px;
   margin: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  font-family: sanserif;
+  color: black;
+  line-height: 1.2;
 }
 
 .content {
@@ -37,25 +40,28 @@
 }
 
 .sun {
-  position: absolute;
-  top: 20px;
-  right: 20px;
+  top: 5px;
+  right: 10px;
   width: 60px;
   height: 60px;
-  background-color: #FFD700;
-  border-radius: 50%;
-  box-shadow: 0 0 20px 10px #ffd700b5;
-}
-
-.sun::before {
-  content: '';
+  justify-content: end;
+  display: flex;
   position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 30px;
-  height: 30px;
-  background-color: #FFD700;
-  border-radius: 50%;
-  box-shadow: 0 0 10px 5px #FFD700;
+}
+.search_btn{
+  cursor: pointer;
+  height: 48px;
+  border-radius: 0px;
+  background: green;
+  color: #FFF;
+  width: 70px;
+  cursor: pointer;
+  position: relative;
+  right: 1px;
+  border: 1px solid green;
+}
+.input_btn{
+  height: 25px;
+  width: 280px;
+  padding: 10px;
 }
