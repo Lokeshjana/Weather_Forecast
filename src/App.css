@@ -6,15 +6,14 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-top: 20px;
 }
-
 .weather-card h2 {
   margin-bottom: 10px;
 }
 
 .weather-card p {
   margin: 5px 0;
+  width: 100%;
 }
 
 .weather-card {
@@ -64,4 +63,50 @@
   height: 25px;
   width: 280px;
   padding: 10px;
+}
+
+.tabs {
+  margin: 20px 0;
+} 
+
+.tab {
+  padding: 10px 20px;
+  cursor: pointer;
+  background-color: #f1f1f1;
+  border: none;
+  margin: 0 5px;
+  font-size: 16px;
+}
+
+.tab.active {
+  background-color: #2196f3;
+  color: white;
+}
+
+.weather-card.full-width {
+  width: 100% !important;
+  height: 100% !important;
+  max-width: 800px;
+}
+
+.weather-content img {
+  width: 50px;
+  height: 50px;
+}
+
+.weather-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.weather-row {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.no-data-found {
+  text-align: center;
+  margin-top: 20px;
 }
