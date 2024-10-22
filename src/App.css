@@ -1,6 +1,7 @@
 
 .App {
   text-align: center;
+  margin: 30px 15px;
 }
 
 .column {
@@ -30,11 +31,6 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-}
-
-.App {
-  text-align: center;
-  margin: 30px 0px;
 }
 
 .column {
@@ -135,7 +131,8 @@
 
 .weather-card {
   width: 250px;
-  background: linear-gradient(to bottom, #fff9cd99, #ff8c0080);
+  background: linear-gradient(to bottom, #bc751ec9, #FFFACD);
+  /* linear-gradient(to bottom, #fff9cd99, #ff8c0080); */
   /* linear-gradient(to bottom, #7FD1B9, #FFFACD); */
   border-radius: 10px;
   padding: 10px;
@@ -170,9 +167,6 @@
 }
 
 @media screen and (max-width:1100px) {
-  .column {
-    max-width: 90%;
-  }
   .column h1 {
     margin: auto;
     max-width: 100%;
@@ -187,7 +181,7 @@
     width: 100%;
   }
   .weather-card {
-    width: 280px;
+    width: 280px !important;
   }
 }
 .weather-table {
